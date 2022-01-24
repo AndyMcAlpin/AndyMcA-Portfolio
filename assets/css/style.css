@@ -1,7 +1,7 @@
 :root {
     --primary-color:  darkblue;
     --secondary-color: grey;
-    --tertiary-color: purple;
+    --tertiary-color: rgb(30, 13, 179);
 }
 
 * {
@@ -83,12 +83,14 @@ section {
     margin: 0;
     font-size: 24px;
     color: var(--primary-color);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.082);
     float: right;
+    background-color: var(--secondary-color);
 }
 
 .aboutMe {
   background-color: var(--secondary-color);
+  display: flex;
 }
 
 .aboutMe h2 {
@@ -98,12 +100,9 @@ section {
     color: var(--primary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-right: 3px solid;
-  float: left;
 }
 
-.aboutMe p {
-  float: right;
-}
+
 
 .work {
   display: flex;
@@ -133,7 +132,8 @@ section {
   background: #CD5C5C;
   margin: auto;
   display: inline-flex;
-  background-image: url('../Images/andymcalpin.github.io_urban-octo-telegram_.png');
+  background-image: url('../Images/Horiseon\ Web\ Site.png');
+  background-size: cover;
 }
 
 .hexagon-small {
@@ -146,19 +146,43 @@ section {
 }
 
 .text-block {
-  width: 30%;
-  height: 15%;
+  width: 40%;
+  height: 30%;
   background-color: var(--secondary-color);
   position: relative;
-  top: 80%;
+  top: 75%;
   left: 5%;
+  color: var(--primary-color);
 }
 
 .Two {
   background-image: url('../Images/Morning\ Glorys\ Hero.jpg');
   width: 250px;
   height: 154.5px;
+  background-size: cover;
 }
+
+.Three {
+  background-image: url('../Images/Morning\ Glorys\ Hero.jpg');
+  width: 250px;
+  height: 154.5px;
+  background-size: cover;
+}
+
+.Four {
+  background-image: url('../Images/Morning\ Glorys\ Hero.jpg');
+  width: 250px;
+  height: 154.5px;
+  background-size: cover;
+}
+
+.Five {
+  background-image: url('../Images/Morning\ Glorys\ Hero.jpg');
+  width: 250px;
+  height: 154.5px;
+  background-size: cover;
+}
+
 
 .contactMe {
   background-color: var(--secondary-color);
