@@ -7,6 +7,7 @@
 * {
   margin: 0;
   padding: 0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -83,7 +84,7 @@ section {
     margin: 0;
     font-size: 24px;
     color: var(--primary-color);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.082);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);    
     float: right;
     background-color: var(--secondary-color);
 }
@@ -91,6 +92,8 @@ section {
 .aboutMe {
   background-color: var(--secondary-color);
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .aboutMe h2 {
@@ -99,9 +102,15 @@ section {
     font-size: 24px;
     color: var(--primary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border-right: 3px solid;
 }
 
+#abt-me {
+  border: 5px; solid var(--primary-color);
+}
+
+.aboutMe p {
+  align-items: center;
+}
 
 
 .work {
@@ -113,7 +122,6 @@ section {
 
 .work h2 {
   color:var(--primary-color);
-  border-right: 3px solid;
   position: relative;
   right: 40%;
 }
@@ -129,7 +137,6 @@ section {
   position: relative;
   width: 500px;
   height: 309px;
-  background: #CD5C5C;
   margin: auto;
   display: inline-flex;
   background-image: url('../Images/Horiseon\ Web\ Site.png');
@@ -140,7 +147,6 @@ section {
   position: relative;
   width: 250px;
   height: 154.5px;
-  background: #CD5C5C;
   margin: auto;
   display: inline-flex;
 }
@@ -156,28 +162,28 @@ section {
 }
 
 .Two {
-  background-image: url('../Images/Morning\ Glorys\ Hero.jpg');
+  background-image: url('../Images/stock-photo-1.jpg');
   width: 250px;
   height: 154.5px;
   background-size: cover;
 }
 
 .Three {
-  background-image: url('../Images/Morning\ Glorys\ Hero.jpg');
+  background-image: url('../Images/stock-photo-2.jfif');
   width: 250px;
   height: 154.5px;
   background-size: cover;
 }
 
 .Four {
-  background-image: url('../Images/Morning\ Glorys\ Hero.jpg');
+  background-image: url('../Images/stock-photo-3.jfif');
   width: 250px;
   height: 154.5px;
   background-size: cover;
 }
 
 .Five {
-  background-image: url('../Images/Morning\ Glorys\ Hero.jpg');
+  background-image: url('../Images/stock-photo-4.jfif');
   width: 250px;
   height: 154.5px;
   background-size: cover;
@@ -190,5 +196,6 @@ section {
 
 .contactMe h2 {
   color: var(--primary-color);
+  border-right: 3px solid;
 }
 
