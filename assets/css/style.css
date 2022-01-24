@@ -31,7 +31,6 @@ header h1 {
     margin: 0;
     font-size: 36px;
     color: var(--primary-color);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
@@ -55,7 +54,6 @@ header nav {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   
   header nav ul li a:hover {
@@ -83,8 +81,7 @@ section {
   font-weight: bold;
     margin: 0;
     font-size: 24px;
-    color: var(--primary-color);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);    
+    color: var(--primary-color);    
     float: right;
     background-color: var(--secondary-color);
 }
@@ -92,6 +89,7 @@ section {
 .aboutMe {
   background-color: var(--secondary-color);
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
 }
@@ -101,11 +99,6 @@ section {
     margin: 0, 20px, 30, 200;
     font-size: 24px;
     color: var(--primary-color);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-#abt-me {
-  border: 5px; solid var(--primary-color);
 }
 
 .aboutMe p {
@@ -114,41 +107,47 @@ section {
 
 
 .work {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
   background-color: rgb(143, 231, 10);
 }
 
 .work h2 {
-  color:var(--primary-color);
-  position: relative;
-  right: 40%;
+  font-weight: bold;
+    margin: 0, 20px, 30, 200;
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+.allProjects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  
 }
  
 .project1 {
-  display: inline-flex;
   width: 100%;
   justify-content: center;
   margin-bottom: 100px;
 }
 
-.hexagon-large {
-  position: relative;
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.project a {
+  margin: 20px 30px;
+}
+
+.one {
   width: 500px;
   height: 309px;
   margin: auto;
-  display: inline-flex;
   background-image: url('../Images/Horiseon\ Web\ Site.png');
   background-size: cover;
-}
-
-.hexagon-small {
-  position: relative;
-  width: 250px;
-  height: 154.5px;
-  margin: auto;
-  display: inline-flex;
 }
 
 .text-block {
@@ -161,28 +160,28 @@ section {
   color: var(--primary-color);
 }
 
-.Two {
+.two {
   background-image: url('../Images/stock-photo-1.jpg');
   width: 250px;
   height: 154.5px;
   background-size: cover;
 }
 
-.Three {
+.three {
   background-image: url('../Images/stock-photo-2.jfif');
   width: 250px;
   height: 154.5px;
   background-size: cover;
 }
 
-.Four {
+.four {
   background-image: url('../Images/stock-photo-3.jfif');
   width: 250px;
   height: 154.5px;
   background-size: cover;
 }
 
-.Five {
+.five {
   background-image: url('../Images/stock-photo-4.jfif');
   width: 250px;
   height: 154.5px;
@@ -196,6 +195,28 @@ section {
 
 .contactMe h2 {
   color: var(--primary-color);
-  border-right: 3px solid;
 }
 
+address a {
+  color: var(--tertiary-color)
+}
+
+/* Media Query for tablets */
+@media screen and (max-width: 968px) {
+  header nav ul li a {
+    font-size: 2.2vw;
+  }
+  
+}
+
+/* Media Query for mobile phones */
+@media screen and (max-width: 575px) {
+  .one {
+    width:auto ;
+  }
+
+  header nav ul li a {
+    font-size: 5vw;
+  }
+  
+}
